@@ -1,0 +1,11 @@
+{
+    "id": "5fe087700de6b9d5e0702091",
+    "name": "mongodb-atlas",
+    "type": "mongodb-atlas",
+    "config": {
+        "clusterName": "TitanCluster",
+        "readPreference": "primary",
+        "wireProtocolEnabled": false
+    },
+    "version": 1
+}

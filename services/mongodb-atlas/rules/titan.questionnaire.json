@@ -1,0 +1,16 @@
+{
+    "collection": "questionnaire",
+    "database": "titan",
+    "id": "5fe088750c16b03832a34827",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {}
+}
