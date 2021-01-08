@@ -1,0 +1,15 @@
+{
+    "id": "5ff8bf00372c6b244c98cbb8",
+    "name": "s_util_db_upload_batch_of_answers",
+    "run_as_authed_user": false,
+    "run_as_user_id": "",
+    "run_as_user_id_script_source": "",
+    "options": {
+        "httpMethod": "POST",
+        "secret": "titan",
+        "validationMethod": "SECRET_AS_QUERY_PARAM"
+    },
+    "respond_result": true,
+    "fetch_custom_user_data": false,
+    "create_user_on_auth": false
+}
