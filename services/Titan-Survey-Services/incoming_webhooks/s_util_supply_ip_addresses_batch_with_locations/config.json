@@ -1,11 +1,11 @@
 {
-    "id": "5fe325c7de731fa78947cb72",
-    "name": "util_db_get_test_questionnaire",
+    "id": "5ff876a9d3a8b5f711009145",
+    "name": "s_util_supply_ip_addresses_batch_with_locations",
     "run_as_authed_user": false,
     "run_as_user_id": "",
     "run_as_user_id_script_source": "",
     "options": {
-        "httpMethod": "GET",
+        "httpMethod": "POST",
         "secret": "titan",
         "validationMethod": "SECRET_AS_QUERY_PARAM"
     },

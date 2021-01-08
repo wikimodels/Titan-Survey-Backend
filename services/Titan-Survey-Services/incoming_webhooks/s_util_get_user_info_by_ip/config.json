@@ -1,11 +1,11 @@
 {
-    "id": "5fe325c8de731fa78947cc2f",
-    "name": "util_db_upload_test_questionnaire",
+    "id": "5ff86fe2372c6b244c3b76a1",
+    "name": "s_util_get_user_info_by_ip",
     "run_as_authed_user": false,
     "run_as_user_id": "",
     "run_as_user_id_script_source": "",
     "options": {
-        "httpMethod": "POST",
+        "httpMethod": "GET",
         "secret": "titan",
         "validationMethod": "SECRET_AS_QUERY_PARAM"
     },

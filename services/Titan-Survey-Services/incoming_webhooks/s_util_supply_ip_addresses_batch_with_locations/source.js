@@ -1,7 +1,9 @@
 exports = async function (payload, response) {
+  const ipAddresses = EJSON.parse(payload.body.text());
   try {
     const result = await context.functions.execute(
-      "util_db_get_test_questionnaire"
+      "f_util_supply_ip_addresses_batch_with_locations",
+      ipAddresses
     );
 
     if (result.message) {
@@ -9,9 +11,8 @@ exports = async function (payload, response) {
     } else {
       response.setStatusCode(200);
     }
-
-    response.setBody(JSON.stringify(result));
     response.setHeader("Content-Type", ["application/json"]);
+    response.setBody(JSON.stringify(result));
   } catch (e) {
     response.setStatusCode(400);
     response.setHeader("Content-Type", ["application/json"]);
