@@ -8,7 +8,7 @@ exports = async function (ip) {
 
     const responseData = EJSON.parse(response.body.text());
 
-    responseData.img = `https://www.countryflags.io/${responseData.countryCode}/shiny/24.png`;
+    responseData.flag_url = `https://www.countryflags.io/${responseData.countryCode}/shiny/24.png`;
 
     responseData.deviceType =
       responseData.mobile === true ? "Смартфоны" : "Десктопы";

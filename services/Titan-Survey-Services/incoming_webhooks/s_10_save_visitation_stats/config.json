@@ -1,0 +1,15 @@
+{
+    "id": "600968d008877f8437398981",
+    "name": "s_10_save_visitation_stats",
+    "run_as_authed_user": false,
+    "run_as_user_id": "",
+    "run_as_user_id_script_source": "",
+    "options": {
+        "httpMethod": "POST",
+        "secret": "titan",
+        "validationMethod": "SECRET_AS_QUERY_PARAM"
+    },
+    "respond_result": true,
+    "fetch_custom_user_data": false,
+    "create_user_on_auth": false
+}

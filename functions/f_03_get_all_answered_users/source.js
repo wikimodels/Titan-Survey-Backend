@@ -9,7 +9,7 @@ exports = async function () {
         {
           $project: {
             _id: 0,
-            flagUrl: "$user_info.img",
+            flag_url: "$user_info.flag_url",
             ip: "$user_info.ip",
             country: "$user_info.country",
             city: "$user_info.city",

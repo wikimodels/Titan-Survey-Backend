@@ -5,6 +5,7 @@
     "value": {
         "answers": "answers",
         "db": "titan",
-        "questionnaire": "questionnaire"
+        "questionnaire": "questionnaire",
+        "visitation_stats": "visitation_stats"
     }
 }

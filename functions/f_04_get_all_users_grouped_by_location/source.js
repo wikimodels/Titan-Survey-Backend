@@ -9,7 +9,7 @@ exports = async function () {
         {
           $group: {
             _id: {
-              flagUrl: "$user_info.flagUrl",
+              flag_url: "$user_info.flag_url",
               country: "$user_info.country",
               city: "$user_info.city",
             },
@@ -20,7 +20,7 @@ exports = async function () {
         {
           $project: {
             _id: 0,
-            flagUrl: "$_id.flagUrl",
+            flag_url: "$_id.flag_url",
             country: "$_id.country",
             city: "$_id.city",
             count: "$count",
