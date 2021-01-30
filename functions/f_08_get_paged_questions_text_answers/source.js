@@ -11,11 +11,11 @@ exports = async function (questionIndex, skip, limit) {
             _id: 0,
             country: "$user_info.country",
             city: "$user_info.city",
-            flagUrl: "$user_info.flagUrl",
+            flag_url: "$user_info.flag_url",
             question: {
               $arrayElemAt: ["$questions", BSON.Int32(questionIndex)],
             },
-            submissionDate: "$submission_date",
+            creation_date: "$creation_date",
           },
         },
         {
@@ -26,14 +26,14 @@ exports = async function (questionIndex, skip, limit) {
             _id: 0,
             country: "$country",
             city: "$city",
-            flagUrl: "$flagUrl",
+            flag_url: "$flag_url",
             question_text_answer: "$question.question_text_answer",
-            submission_date: "$submissionDate",
+            creation_date: "$creation_date",
           },
         },
 
-        { $sort: { submission_date: -1 } },
-        { $skip: BSON.Int32(skip) * BSON.Int32(limit)},
+        { $sort: { creation_date: -1 } },
+        { $skip: BSON.Int32(skip) * BSON.Int32(limit) },
         { $limit: BSON.Int32(limit) },
       ])
       .toArray();

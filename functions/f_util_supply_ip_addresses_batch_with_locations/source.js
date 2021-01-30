@@ -36,7 +36,7 @@ exports = async function (ipAddresses) {
         delete responseData[j].query;
         responseData[
           j
-        ].flagUrl = `https://www.countryflags.io/${responseData[j].countryCode}/shiny/24.png`;
+        ].flag_url = `https://www.countryflags.io/${responseData[j].countryCode}/shiny/24.png`;
 
         responseData[j].deviceType =
           responseData[j].mobile === true ? "Смартфоны" : "Десктопы";
