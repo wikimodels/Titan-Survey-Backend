@@ -7,3 +7,4 @@ realm-cli import --app-id=$REALM_APPID --strategy=replace --path=$APP_PATH
 echo Logging out
 realm-cli logout
 echo Deploy complete
+sleep 200

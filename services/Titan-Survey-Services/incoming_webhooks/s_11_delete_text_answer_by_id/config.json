@@ -1,0 +1,15 @@
+{
+    "id": "6035119143b395a385e0aa15",
+    "name": "s_11_delete_text_answer_by_id",
+    "run_as_authed_user": false,
+    "run_as_user_id": "",
+    "run_as_user_id_script_source": "",
+    "options": {
+        "httpMethod": "DELETE",
+        "secret": "titan",
+        "validationMethod": "SECRET_AS_QUERY_PARAM"
+    },
+    "respond_result": true,
+    "fetch_custom_user_data": false,
+    "create_user_on_auth": false
+}

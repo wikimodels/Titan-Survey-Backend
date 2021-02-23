@@ -8,7 +8,7 @@ exports = async function (questionIndex, skip, limit) {
       .aggregate([
         {
           $project: {
-            _id: 0,
+            _id: 1,
             country: "$user_info.country",
             city: "$user_info.city",
             flag_url: "$user_info.flag_url",
