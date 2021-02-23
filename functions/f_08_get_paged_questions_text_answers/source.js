@@ -23,7 +23,7 @@ exports = async function (questionIndex, skip, limit) {
         },
         {
           $project: {
-            _id: 0,
+            _id: 1,
             country: "$country",
             city: "$city",
             flag_url: "$flag_url",
